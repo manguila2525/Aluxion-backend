@@ -9,7 +9,6 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use('/api/login', require('./routes/login.routes'))
 app.use('/api/stop', require('./routes/bus.routes'))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
